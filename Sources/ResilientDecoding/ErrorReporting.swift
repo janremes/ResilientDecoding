@@ -166,8 +166,6 @@ extension Decoder {
 
 // MARK: - Pretty Printing
 
-#if DEBUG
-
 extension ErrorDigest: CustomDebugStringConvertible {
   public var debugDescription: String {
     root.debugDescriptionLines.joined(separator: "\n")
@@ -215,8 +213,6 @@ private extension Error {
   }
 
 }
-
-#endif
 
 // MARK: - Specific Errors
 
